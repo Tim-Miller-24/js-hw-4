@@ -1,4 +1,4 @@
-
+/* 
 //  Задание: (Возраст)
     
 var Human = {
@@ -13,7 +13,7 @@ function Vivod() {
 
 Vivod();
 
-
+ */
 
 
 
@@ -73,5 +73,30 @@ for (let i = 0; i < quant; i++) {
 }
 
 */
+
+
+
+/* 
+   // Создать кассовый аппарат.
+
+
+*/
+
+let prise = 0;
+
+function addToBasket() {
+    let productPrise = +prompt('Введите стоимость товара.');
+    return prise += productPrise;
+}
+
+do {
+    var askAdd = confirm('Добавить стоимость товара?');
+    if (askAdd == true) {
+        addToBasket();
+    }
+} while (askAdd == true);
+
+
+alert(`Общая сумма покупки: ${prise}.`);
 
 
